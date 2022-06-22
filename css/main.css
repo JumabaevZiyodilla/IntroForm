@@ -1,4 +1,4 @@
-:root{
+:root {
     --bgcolor: #f1f4ff;
     --white-color: #fff;
     --link-bgcolor: #4dc490;
@@ -8,6 +8,7 @@
     --btn-bgcolor: #655af2;
     --btn-hover-bgcolor: #3A2BF8;
 }
+
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -66,11 +67,11 @@ body {
     background-color: var(--bgcolor);
 }
 
-.learn-box-primary{
+.learn-box-primary {
     display: flex;
 }
 
-.learn-box{
+.learn-box {
     width: 570px;
     margin-right: 12px;
 }
@@ -90,7 +91,7 @@ body {
     text-align: center;
     border: 1px solid var(--white-color);
     border-radius: 20px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .learn-title {
@@ -100,9 +101,11 @@ body {
     font-weight: 700;
     color: var(--white-color);
 }
-.learn-text-box{
+
+.learn-text-box {
     width: 347px;
 }
+
 .learn-text {
     margin-bottom: 203px;
     font-size: 16px;
@@ -124,12 +127,14 @@ body {
     color: var(--white-color);
     text-decoration: none;
 }
-.learn-link-tiny{
+
+.learn-link-tiny {
     font-size: 19px;
     line-height: 23px;
     font-weight: 400;
     color: var(--white-color);
 }
+
 /* form  */
 .course-box {
     padding: 55px 60px 30px 60px;
@@ -159,20 +164,16 @@ body {
     outline: none;
 }
 
-.input-name:not(:placeholder-shown):not(:focus):valid{
+.input-name:not(:placeholder-shown):not(:focus):valid {
     border-bottom: 1px solid var(--title-color);
 }
 
 .input-name:not(:placeholder-shown):not(:focus):invalid {
     border-bottom: 1px solid var(--borderb-color);
 }
-.input-name:not(:placeholder-shown):not(:focus):valid + span{
-    color: #f03535;
-    opacity: 0;
-}
 
-.input-name:not(:placeholder-shown):not(:focus):invalid + span {
-    color: #f03535;
+.input-name:not(:placeholder-shown):not(:focus):invalid+span {
+    color: var(--borderb-color);
     opacity: 1;
 }
 
@@ -222,4 +223,5 @@ body {
     font-weight: 500;
     color: var(--borderb-color);
 }
+
 /* form  */
